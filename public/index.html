@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Backbone.js Library</title>
+	</head>
+	<body>
+        <div id="requirements">
+            <form id="addRequirement" action="#">
+                <div>
+                    <label for="name">Name: </label><input id="name" type="text" />
+                    <label for="description">Description: </label><input id="description" type="text" />
+                    <button id="add">Add</button>
+                </div>
+            </form>
+        </div>
+        <script id="requirementTemplate" type="text/template">
+            <ul>
+                <li><%= name %></li>
+                <li><%= description %></li>
+            </ul>
+            <button class="delete">Delete</button>
+        </script>
+
+        <script src="javascripts/lib/jquery-1.9.0.js"></script>
+		<script src="javascripts/lib/underscore.js"></script>
+		<script src="javascripts/lib/backbone.js"></script>
+		<script src="javascripts/models/requirement.js"></script>
+		<script src="javascripts/collections/package.js"></script>
+		<script src="javascripts/views/requirement.js"></script>
+		<script src="javascripts/views/package.js"></script>
+
+    <script type="text/javascript">
+        new app.PackageView();
+    </script>
+	</body>
+</html>
