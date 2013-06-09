@@ -1,3 +1,4 @@
 .idea
 get_info_from_redmine.txt
 .DS_Store
+node_modules
